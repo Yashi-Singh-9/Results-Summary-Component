@@ -1,5 +1,9 @@
 # Frontend Mentor - Results summary component solution
 
+![Last Commit](https://img.shields.io/gitlab/last-commit/Yashi-Singh-9/results-summary-component?style=flat-square&logo=gitlab)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a474c793-9b62-409a-a907-ffaaf57a40cc/deploy-status)](https://app.netlify.com/sites/results-summary-component-by-yashi/deploys)
+![Custom Version](https://img.shields.io/badge/release-v1.0.0-blue?style=flat-square)
+
 This project is a solution to the [Results Summary Component challenge](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV) on Frontend Mentor. The component is designed to display a user's performance summary across various categories in a visually appealing and responsive manner. It includes key features like responsive design, hover effects, and custom CSS properties for consistency. The project serves as a practical example of using HTML and CSS to create a component that works well across different screen sizes.
 
 ## Table of contents
@@ -35,7 +39,7 @@ Mobile Preview
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live](https://results-summary-component-by-yashi.netlify.app/)
 
 ## Installation
 
@@ -73,7 +77,7 @@ Working on this project has been a great learning experience, and here are some 
 
 #### Semantic HTML5 Markup
 
-Using semantic elements like `<section>, <div>, <h3>,` and `<p>` helped me structure the content meaningfully. Here's an example of how I used semantic elements effectively:
+Using semantic elements like `<section>`, `<div>`, `<h3>`, and `<p>` helped me structure the content meaningfully. Here's an example of how I used semantic elements effectively:
 
 ```
 <section class="summary">
