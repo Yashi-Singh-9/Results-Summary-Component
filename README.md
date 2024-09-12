@@ -1,6 +1,6 @@
 # Frontend Mentor - Results summary component solution
 
-![Last Commit](https://img.shields.io/gitlab/last-commit/Yashi-Singh-9/results-summary-component?style=flat-square&logo=gitlab)
+![Last Commit](https://img.shields.io/github/last-commit/Yashi-Singh-9/Results-Summary-Component?style=flat-square&logo=github)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a474c793-9b62-409a-a907-ffaaf57a40cc/deploy-status)](https://app.netlify.com/sites/results-summary-component-by-yashi/deploys)
 ![Custom Version](https://img.shields.io/badge/release-v1.0.0-blue?style=flat-square)
 
@@ -47,7 +47,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
    ```sh
-   git clone https://gitlab.com/Yashi-Singh-9/results-summary-component.git
+   git clone https://github.com/Yashi-Singh-9/Results-Summary-Component.git
    ```
 
 2. **Navigate to the project directory:**
