@@ -1,0 +1,238 @@
+$light-red: hsl(0, 100%, 67%);
+$orangey-yellow: hsl(39, 100%, 56%);
+$green-teal: hsl(166, 100%, 37%);
+$cobalt-blue: hsl(234, 85%, 45%);
+$light-slate-blue-background: hsl(252, 100%, 67%);
+$light-royal-blue-background: hsl(241, 81%, 54%);
+$violet-blue-circle: hsla(256, 72%, 46%, 1);
+$persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('./assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('./assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype');
+    font-weight: 800; /* ExtraBold */
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('./assets/fonts/static/HankenGrotesk-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+main{
+    margin: 10rem auto 1.5rem auto;
+    display: flex;
+    border-radius: 40px;
+    align-items: center;  
+    overflow: hidden;  
+    max-width: 680px;
+    width: 100%;
+    box-shadow: 0 10px 20px lighten($light-royal-blue-background, 35%);
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: normal;
+        max-width: unset;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .result{
+        background: linear-gradient($light-slate-blue-background,$light-royal-blue-background);
+        padding: 2.1rem;
+        flex: 1;
+        text-align: center;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+
+        @media (max-width: 768px) {
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 40px;
+        }
+
+        h3{
+            color: lighten($light-slate-blue-background, 15%);
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .average{
+            background: linear-gradient($violet-blue-circle, $persian-blue-circle);
+            border-radius: 50%;
+            width: 190px;
+            height: 190px;
+            margin: 0 auto;
+            padding: 1.7rem;
+
+            h1{
+                font-size: 4rem;
+                color: #fff;
+                margin-top: 1rem;
+            }
+
+            span{
+                color: lighten($light-slate-blue-background, 15%);
+                font-weight: bold;
+            }
+        }
+
+        h2{
+            font-weight: bold;
+            margin-top: 1.6rem;
+            color: #fff;
+            font-size: 1.95em;
+            margin-bottom: 0.3em;
+        }
+
+        p{
+            color: lighten($light-slate-blue-background, 15%);
+            max-width: 250px;
+            width: 100%;
+            margin: 0 auto 1rem auto;
+
+            @media (max-width: 768px) {
+                max-width: none;
+            }
+        }
+    }
+
+    .summary{
+        flex: 1;
+        padding: 1.5rem;
+
+        h2{
+            padding: 1rem;
+            color: #393E51;
+        }
+
+        .summary-list{
+            list-style: none;
+
+            li{                
+                display: flex;
+                justify-content: space-between;
+                padding: 1.2rem;
+                cursor: pointer;
+                transition: 0.3s ease;
+                margin-bottom: 1.2rem;
+
+                .item-info {
+                    display: flex;
+
+                    img{
+                        margin-right: 0.3em;
+                    }
+                }
+
+                p {
+                    color: #A8B1C2;
+
+                    span{
+                        font-weight: 800;
+                        color: #393E51;
+                    }
+                }
+
+                &.reaction {
+                    color: $light-red;
+                    background-color: lighten($light-red, 30%);
+                    font-weight: bold;
+                    border-radius: 0.6rem;
+
+                    &:hover{
+                        background-color: lighten($light-red, 26%);
+                    }
+                    
+                }
+
+                &.memory{
+                    color: $orangey-yellow;
+                    background-color: lighten($orangey-yellow, 40%);
+                    font-weight: bold;
+                    border-radius: 0.6rem;
+
+                    &:hover{
+                        background-color: lighten($orangey-yellow, 36%);
+                    }
+                }
+
+                &.verbal{
+                    color: $green-teal;
+                    background-color: lighten($green-teal, 60%);
+                    font-weight: bold;
+                    border-radius: 0.6rem;
+
+                    &:hover{
+                        background-color: lighten($green-teal, 56%);
+                    }
+                }
+
+                &.visual{
+                    color: $cobalt-blue;
+                    background-color: lighten($cobalt-blue, 52%);
+                    font-weight: bold;
+                    border-radius: 0.6rem;
+
+                    &:hover{
+                        background-color: lighten($cobalt-blue, 48%);
+                    }
+                }
+            }
+        }
+
+        button{
+            border: none;
+            padding: 1rem;
+            font-family: inherit;
+            font-size: inherit;
+            color: #fff;
+            width: 100%;
+            border-radius: 32px;
+            background-color: #303B59;
+            cursor: pointer;
+            transition: 0.3s ease;
+            margin-top: 1rem;
+
+            &:hover{
+                background-color: lighten(#303B59, 10%);
+            }
+        }
+    }
+}
+
+footer{
+    text-align: center;
+
+    @media (max-width: 768px) {
+        margin: 1rem;
+    }
+
+    a,
+    a:visited{
+        text-decoration: none;
+        color: $violet-blue-circle;
+        font-weight: bold;
+    }
+}

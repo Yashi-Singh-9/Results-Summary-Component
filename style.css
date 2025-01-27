@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("./assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("./assets/fonts/static/HankenGrotesk-ExtraBold.ttf") format("truetype");
+  font-weight: 800; /* ExtraBold */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("./assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+main {
+  margin: 10rem auto 1.5rem auto;
+  display: flex;
+  border-radius: 40px;
+  align-items: center;
+  overflow: hidden;
+  max-width: 680px;
+  width: 100%;
+  box-shadow: 0 10px 20px #cdccfa;
+}
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: normal;
+    max-width: unset;
+    margin: 0;
+    border-radius: 0;
+  }
+}
+main .result {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 2.1rem;
+  flex: 1;
+  text-align: center;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+@media (max-width: 768px) {
+  main .result {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 40px;
+  }
+}
+main .result h3 {
+  color: #b6a3ff;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+main .result .average {
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  width: 190px;
+  height: 190px;
+  margin: 0 auto;
+  padding: 1.7rem;
+}
+main .result .average h1 {
+  font-size: 4rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+main .result .average span {
+  color: #b6a3ff;
+  font-weight: bold;
+}
+main .result h2 {
+  font-weight: bold;
+  margin-top: 1.6rem;
+  color: #fff;
+  font-size: 1.95em;
+  margin-bottom: 0.3em;
+}
+main .result p {
+  color: #b6a3ff;
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto 1rem auto;
+}
+@media (max-width: 768px) {
+  main .result p {
+    max-width: none;
+  }
+}
+main .summary {
+  flex: 1;
+  padding: 1.5rem;
+}
+main .summary h2 {
+  padding: 1rem;
+  color: #393E51;
+}
+main .summary .summary-list {
+  list-style: none;
+}
+main .summary .summary-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 1.2rem;
+}
+main .summary .summary-list li .item-info {
+  display: flex;
+}
+main .summary .summary-list li .item-info img {
+  margin-right: 0.3em;
+}
+main .summary .summary-list li p {
+  color: #A8B1C2;
+}
+main .summary .summary-list li p span {
+  font-weight: 800;
+  color: #393E51;
+}
+main .summary .summary-list li.reaction {
+  color: hsl(0, 100%, 67%);
+  background-color: #fff0f0;
+  font-weight: bold;
+  border-radius: 0.6rem;
+}
+main .summary .summary-list li.reaction:hover {
+  background-color: #ffdbdb;
+}
+main .summary .summary-list li.memory {
+  color: hsl(39, 100%, 56%);
+  background-color: #fff8eb;
+  font-weight: bold;
+  border-radius: 0.6rem;
+}
+main .summary .summary-list li.memory:hover {
+  background-color: #fff1d6;
+}
+main .summary .summary-list li.verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: #f0fffb;
+  font-weight: bold;
+  border-radius: 0.6rem;
+}
+main .summary .summary-list li.verbal:hover {
+  background-color: #dbfff7;
+}
+main .summary .summary-list li.visual {
+  color: hsl(234, 85%, 45%);
+  background-color: #f1f2fe;
+  font-weight: bold;
+  border-radius: 0.6rem;
+}
+main .summary .summary-list li.visual:hover {
+  background-color: #dee1fc;
+}
+main .summary button {
+  border: none;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: inherit;
+  color: #fff;
+  width: 100%;
+  border-radius: 32px;
+  background-color: #303B59;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 1rem;
+}
+main .summary button:hover {
+  background-color: #42517a;
+}
+
+footer {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  footer {
+    margin: 1rem;
+  }
+}
+footer a,
+footer a:visited {
+  text-decoration: none;
+  color: hsl(256, 72%, 46%);
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
