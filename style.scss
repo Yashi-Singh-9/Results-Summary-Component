@@ -38,6 +38,7 @@ body{
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 500;
     font-size: 1.125rem;
+    background-color: #ECF2FF;
 }
 
 main{
@@ -49,6 +50,7 @@ main{
     max-width: 680px;
     width: 100%;
     box-shadow: 0 10px 20px lighten($light-royal-blue-background, 35%);
+    background-color: #fff;
 
     @media (max-width: 768px) {
         flex-direction: column;
@@ -180,12 +182,12 @@ main{
 
                 &.verbal{
                     color: $green-teal;
-                    background-color: lighten($green-teal, 60%);
+                    background-color: lighten($green-teal, 58%);
                     font-weight: bold;
                     border-radius: 0.6rem;
 
                     &:hover{
-                        background-color: lighten($green-teal, 56%);
+                        background-color: lighten($green-teal, 54%);
                     }
                 }
 

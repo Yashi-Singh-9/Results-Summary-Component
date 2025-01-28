@@ -26,6 +26,7 @@ body {
   font-family: "Hanken Grotesk", sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
+  background-color: #ECF2FF;
 }
 
 main {
@@ -37,6 +38,7 @@ main {
   max-width: 680px;
   width: 100%;
   box-shadow: 0 10px 20px #cdccfa;
+  background-color: #fff;
 }
 @media (max-width: 768px) {
   main {
@@ -154,12 +156,12 @@ main .summary .summary-list li.memory:hover {
 }
 main .summary .summary-list li.verbal {
   color: hsl(166, 100%, 37%);
-  background-color: #f0fffb;
+  background-color: #e6fff9;
   font-weight: bold;
   border-radius: 0.6rem;
 }
 main .summary .summary-list li.verbal:hover {
-  background-color: #dbfff7;
+  background-color: #d1fff4;
 }
 main .summary .summary-list li.visual {
   color: hsl(234, 85%, 45%);
