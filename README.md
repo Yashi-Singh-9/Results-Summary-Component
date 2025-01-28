@@ -40,8 +40,8 @@ Users should be able to:
 <img src="design/Mobile-Design.png" height="750">
 
 ### Links
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/results-summary-component-1p449I9jNZ)
+- Live Site URL: [Live Site](https://yashi-singh-9.github.io/Results-Summary-Component/)
 
 ---
 
